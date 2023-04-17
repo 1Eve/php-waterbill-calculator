@@ -16,7 +16,28 @@
 			<button type="submit" class="btn btn-primary">Calculate Bill</button>
 		</form>
 
+		<?php
+
+		if (isset($_POST['units'])) {
+			$units = $_POST['units'];
+			$rate = 0;
+
+			$rates = [
+				'0-20' => 35,
+				'21-49' => 40,
+				'50-100' => 45,
+				'Above 100' => 50
+			];
+
+			$bill = $units * $rate;
+			echo "<h2>Your bill for $units units is Ksh. $bill</h2>";
+		}
+
+		?>
+
 	</div>
+
+	
 </body>
 
 </html>
