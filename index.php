@@ -29,9 +29,25 @@
 				'Above 100' => 50
 			];
 
+
+		switch(true){
+			case ($units >= 0 && $units <= 20):
+				$rate = 35;
+				break;
+			case ($units >= 21 && $units <= 49):
+				$rate = 40;
+				break;
+			case ($units >= 50 && $units <= 100):
+				$rate = 45;
+				break;
+			default:
+				$rate = 50;
+				break;
+			}
 			$bill = $units * $rate;
 			echo "<h2>Your bill for $units units is Ksh. $bill</h2>";
 		}
+
 
 		?>
 
