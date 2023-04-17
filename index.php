@@ -32,16 +32,16 @@
 
 		switch(true){
 			case ($units >= 0 && $units <= 20):
-				$rate = 35;
+				$rate = $rates['0-20'];
 				break;
 			case ($units >= 21 && $units <= 49):
-				$rate = 40;
+				$rate = $rates['21-49'];
 				break;
 			case ($units >= 50 && $units <= 100):
-				$rate = 45;
+				$rate = $rates['50-100'];
 				break;
 			default:
-				$rate = 50;
+				$rate = $rate['Above 100'];
 				break;
 			}
 			$bill = $units * $rate;
