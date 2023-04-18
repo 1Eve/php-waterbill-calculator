@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap");
-
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
   display: flex;
   justify-content: center;
@@ -11,8 +14,8 @@ body {
 .container {
   width: 100%;
   max-width: 500px;
-  height: 100vh;
-  max-height: 500px;
+  height: 110vh;
+  max-height: 550px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -29,14 +32,14 @@ h1 {
   font-weight: 500;
   color: #333;
   margin-bottom: 2px;
-  margin-top: -20px;
+  padding-top: 20px;
 }
 form {
   position: relative;
   width: 100%;
   margin-bottom: -15px;
   padding: 0 20px;
-  margin-top:10px;
+  margin-top: 10px;
 }
 .form-group {
   display: flex;
@@ -51,7 +54,7 @@ form {
 .form-control {
   display: flex;
   justify-content: center;
-  padding-left:5px;
+  padding-left: 5px;
   align-items: center;
   font-size: larger;
   margin: 50px;
@@ -65,7 +68,7 @@ button {
   align-items: center;
   font-size: 16px;
   margin: auto;
-  
+
   padding: 20px;
   border-radius: 8px;
 }
@@ -73,7 +76,7 @@ button:hover {
   background-color: #5299b7;
   color: #fff;
 }
-h2{
-    font-family: "Hanken Grotesk", sans-serif;
-    margin: auto;
+h2 {
+  font-family: "Hanken Grotesk", sans-serif;
+  margin: auto;
 }

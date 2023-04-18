@@ -42,7 +42,7 @@
 				$rate = $rates['50-100'];
 				break;
 			default:
-				$rate = $rate['Above 100'];
+				$rate = $rates['Above 100'];
 				break;
 			}
 			$bill = $units * $rate;
